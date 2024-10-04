@@ -3,6 +3,7 @@
 
 import Header from "./components/Header";
 import { useEffect } from "react";
+import crystal from "../public/images/crystal";
 
 export default function App() {
   //we need TWO states to store the cookies and cookiesPerSecond
@@ -23,8 +24,8 @@ export default function App() {
   return (
     <>
       <Header />
-      <img src={} alt="Crystal" />
-{/* we  need an event to listen to the click on an image */}
+      <img src={crystal} alt="Crystal" />
+      {/* we  need an event to listen to the click on an image */}
       <h1>Cookies</h1>
       {/* we need to render the cookies number and cookiesPerSecond here */}
       {/* we need to render our upgrades shop in here using map */}
