@@ -1,0 +1,6 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+.header {
+  padding: 1rem; /* Space around the content */
+  text-align: center;
+}

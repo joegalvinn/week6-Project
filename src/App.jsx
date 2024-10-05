@@ -5,11 +5,18 @@ import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import CrystalClicker from "./components/CrystalClicker";
 import UpgradeShop from "./components/UpgradeShop";
+import "./App.css";
 
 export default function App() {
   //we need TWO states to store the cookies and cookiesPerSecond
-  const [cookies, setCookies] = useState(0);
-  const [cookiesPerSecond, setCookiesPerSecond] = useState(1);
+  const [cookies, setCookies] = useState(() => {
+    const savedCookies = localStorage.getItem("cookies");
+    return savedCookies ? parseInt(savedCookies, 10) : 0;
+  });
+  const [cookiesPerSecond, setCookiesPerSecond] = useState(() => {
+    const savedCookiesPerSecond = localStorage.getItem("cookiesPerSecond");
+    return savedCookiesPerSecond ? parseInt(savedCookiesPerSecond, 10) : 1;
+  });
   const [upgrades, setUpgrades] = useState([]);
 
   useEffect(() => {
@@ -20,6 +27,14 @@ export default function App() {
     };
     fetchUpgrades();
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cookies", cookies);
+  }, [cookies]);
+
+  useEffect(() => {
+    localStorage.setItem("cookiesPerSecond", cookiesPerSecond);
+  }, [cookiesPerSecond]);
 
   const handleCookieClick = () => {
     setCookies((prevCookies) => prevCookies + 1);
@@ -45,9 +60,15 @@ export default function App() {
     }
   };
 
+  const reset = () => {
+    setCookies(0);
+    setCookiesPerSecond(1);
+  };
+
   return (
-    <>
+    <div className="body">
       <Header />
+
       <CrystalClicker
         cookies={cookies}
         cookiesPerSecond={cookiesPerSecond}
@@ -62,6 +83,7 @@ export default function App() {
 
       {/* we need to render the cookies number and cookiesPerSecond here */}
       {/* we need to render our upgrades shop in here using map */}
-    </>
+      <button onClick={reset}>Reset Game</button>
+    </div>
   );
 }

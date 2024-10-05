@@ -1,7 +1,9 @@
+import "./Header.css";
+
 export default function Header() {
   return (
-    <>
-      <h1>HEADER</h1>
-    </>
+    <div className="header">
+      <img src="/images/THE-DWARVEN-MINE.png" alt="title" />
+    </div>
   );
 }

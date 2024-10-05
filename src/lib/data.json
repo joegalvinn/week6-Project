@@ -2,36 +2,36 @@
   {
     "id": 1,
     "name": "Apprentice Miners",
-    "description": "Automatically mines 1 ore per second.",
+    "description": "+1 ore per second.",
     "oresPerSecond": 1,
     "cost": 20
   },
   {
     "id": 2,
     "name": "Experienced Miners",
-    "description": "Automatically mines 10 ores per second.",
+    "description": "+10 ores per second.",
     "oresPerSecond": 10,
-    "cost": 100
+    "cost": 150
   },
   {
     "id": 3,
     "name": "Dwarven Excavation Team",
-    "description": "Excavation team mines 25 ores per second.",
+    "description": "+25 ores per second.",
     "oresPerSecond": 25,
-    "cost": 500
+    "cost": 750
   },
   {
     "id": 4,
     "name": "Mining Golems",
-    "description": "Enchanted golems mine 75 ores per second.",
+    "description": "+75 ores per second.",
     "oresPerSecond": 75,
-    "cost": 1500
+    "cost": 2500
   },
   {
     "id": 5,
-    "name": "Ancient Forge Constructs",
-    "description": "Constructs from ancient forges mine 150 ores per second.",
+    "name": "Ancient Constructs",
+    "description": "+150 ores per second.",
     "oresPerSecond": 150,
-    "cost": 5000
+    "cost": 10000
   }
 ]
