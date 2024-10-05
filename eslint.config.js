@@ -29,6 +29,8 @@ export default [
       ...react.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
       react: "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
       "prop-types": "off",
       "react/jsx-no-target-blank": "off",
       "react-refresh/only-export-components": [
