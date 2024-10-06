@@ -1,6 +1,5 @@
 import React from "react";
 import "./CrystalClicker.css";
-import crystalImage from "./images/crystal.png";
 
 const CrystalClicker = ({ cookies, cookiesPerSecond, onCookieClick }) => {
   return (
@@ -36,7 +35,7 @@ const CrystalClicker = ({ cookies, cookiesPerSecond, onCookieClick }) => {
       </h1>
       <img
         className="crystal"
-        src={crystalImage}
+        src="/images/crystal.png"
         alt="Crystal"
         onClick={onCookieClick}
         style={{ cursor: "pointer" }}
