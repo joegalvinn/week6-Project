@@ -21,7 +21,7 @@ export default function App() {
 
   useEffect(() => {
     const fetchUpgrades = async () => {
-      const response = await fetch("src/lib/data.json");
+      const response = await fetch("/src/lib/data.json");
       const data = await response.json();
       setUpgrades(data);
     };
