@@ -4,7 +4,7 @@
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import CrystalClicker from "./components/CrystalClicker";
-import UpgradeShop from "./components/UpgradeShop";
+import UpgradeShop from "/src/components/UpgradeShop.jsx";
 import "./App.css";
 
 export default function App() {
