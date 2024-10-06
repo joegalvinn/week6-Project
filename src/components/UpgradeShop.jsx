@@ -4,16 +4,17 @@ import "./UpgradeShop.css";
 const UpgradeShop = ({ upgrades, cookies, onUpgradePurchase }) => {
   return (
     <>
-      <h2
-        style={{
-          textShadow: "2px 2px 4px rgba(25, 9, 255, 0.9)",
-          WebkitTextStroke: "0.1px red",
-        }}
-      >
-        Upgrades
-      </h2>
       <div className="upgrade-shop-parent">
         <div className="upgrade-shop">
+          <h2
+            style={{
+              textShadow: "2px 2px 4px rgba(25, 9, 255, 0.9)",
+              WebkitTextStroke: "0.1px red",
+            }}
+            className="upgradeTitle"
+          >
+            Upgrades
+          </h2>
           {upgrades.map((upgrade) => (
             <div key={upgrade.id} className={`upgrade upgrade-${upgrade.id}`}>
               <h3>{upgrade.name}</h3>

@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/ <- local storage
 https://stackoverflow.com/questions/43206423/css3-tranisition-box-shadow-pulse <- pulse
+https://www.youtube.com/watch?v=OE4MsGlzxxc <- flip

@@ -83,7 +83,9 @@ export default function App() {
 
       {/* we need to render the cookies number and cookiesPerSecond here */}
       {/* we need to render our upgrades shop in here using map */}
-      <button onClick={reset}>Reset Game</button>
+      <button onClick={reset} className="reset">
+        Reset Game
+      </button>
     </div>
   );
 }
