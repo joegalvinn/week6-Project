@@ -72,7 +72,7 @@ h1 {
 @media only screen and (min-width: 768px) {
   .crystal {
     position: relative;
-    top: -20vh;
+    top: -25vh;
     left: -22vw;
     max-width: 500px;
   }
